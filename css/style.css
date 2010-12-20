@@ -4,7 +4,7 @@
     margin:0 0 0 0;
     padding: 0;
     color:#ffffff;
-	list-style: none;
+    list-style: none;
 }
 
 body {
@@ -105,7 +105,7 @@ body {
     padding-left:100px;
     padding-right:65px;*/
     width:900px;
-	margin: 0 auto;
+    margin: 0 auto;
     min-height:50px;
     clear:both;
 }
@@ -126,33 +126,33 @@ h3 {
     height:78px;
     /*width:100%;*/
     padding:0 0 0 0;
-    background:url('images/header_bg.png') repeat-x left top;
+    background:url('../images/header_bg.png') repeat-x left top;
 }
 
 .banner {
     padding:0 0 0 0;
     height:78px;
     /*width:900px;*/
-    background:url('images/header.png') no-repeat center top;
+    background:url('../images/header.png') no-repeat center top;
 }
 
 .lem_mit_bg {
     height:205px;
     /*width:100%;*/
     padding:0 0 0 0;
-    background:url('images/banner_bg.png') repeat-x left top;
+    background:url('../images/banner_bg.png') repeat-x left top;
 }
 
 .lem_mit_banner {
     height:205px;
-    background:url('images/banner.png') no-repeat center top;
+    background:url('../images/banner.png') no-repeat center top;
 }
 
 .splash_container {
     height:430px;
     /*width:100%;*/
     padding:0 0 0 0;
-    background:url('images/presentationBanner_bg.png') repeat-x left top;
+    background:url('../images/presentationBanner_bg.png') repeat-x left top;
 }
 
 .splash {
@@ -160,22 +160,23 @@ h3 {
     /*width:850px;*/
     padding-left:50px;
     padding-right:0;
-    background:url('images/presentationBanner.png') no-repeat center top;
+    background:url('../images/presentationBanner.png') no-repeat center top;
 }
 
 .nav_container {
     height:60px;
     width:100%;
     padding:0 0 0 0;
-    background:url('images/toolbar_bg.png') repeat-x left top;
+    background:url('../images/toolbar_bg.png') repeat-x left top;
 }
 
 .nav {
+    margin:0 auto;
     padding-left:99px;
     padding-right:99px;
-    /*width:702px;*/
+    width:702px;
     height:60px;
-    background:url('images/toolbar.png') no-repeat center top;
+    background:url('../images/toolbar.png') no-repeat center top;
 }
 
 .button_container {
@@ -210,9 +211,8 @@ li{
 }
 
 .content {
-    background-color:#262626;
     width:730px;
-	margin-left: 100px;
+    margin-left: 100px;
     overflow:auto;
     padding:0 0 0 0;
 }
