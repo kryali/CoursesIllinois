@@ -1,6 +1,10 @@
 <!DOCTYPE HTML>
 <html>
 <head>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.lightbox-0.5.js"></script>
+
+<link rel="stylesheet" type="text/css" href="css/jquery.lightbox-0.5.css" media="screen" />
 <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css' />
 <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
@@ -51,7 +55,9 @@
 	    <img src="images/image2.png" alt="Another sample screenshot" />
 	</div>
 	<div name="right_column" class="column">
-	    <img src="images/image1.png" alt="A sample screenshot" />
+	    <a href="images/image1.png" class="lightbox">
+		<img src="images/image1.png" alt="A sample screenshot" />
+	    </a>
 	    <h3>Students</h3>
 	    <div class="subsec_text">
 		<ul>
@@ -84,5 +90,11 @@
     <span style="color:black;">Throw a footer in here?</span>
     &nbsp;
 </div>
+
+<!-- script to add lightboxes -->
+<script type="text/javascript">
+$('a.lightbox').lightBox();
+</script>
+
 </body>
 </html>
