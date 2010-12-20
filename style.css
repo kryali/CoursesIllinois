@@ -211,6 +211,13 @@ h3 {
     overflow:auto;
 }
 
+.subtext{
+	border-left: 2px solid #555;
+	padding: 0 0 0 10px;
+	margin: 5px;
+	color: #ccc;
+}
+
 .section_desc {
 	font-size: 1.3em;
     margin:0 0 30px 0;
@@ -230,8 +237,12 @@ div[name~='left_column'] {
     margin-right:20px;
 }
 
+div[name~='right_column'] {
+    margin:30px 0 0 10px;
+}
+
 .subsec_text {
     padding:0 0 0 0;
-    margin-bottom:10px;
+    margin-bottom:50px;
     width:inherit;
 }
