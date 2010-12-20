@@ -4,7 +4,7 @@
     margin:0 0 0 0;
     padding: 0;
     color:#ffffff;
-	list-style: none;
+    list-style: none;
 }
 
 body {
@@ -105,7 +105,7 @@ body {
     padding-left:100px;
     padding-right:65px;*/
     width:900px;
-	margin: 0 auto;
+    margin: 0 auto;
     min-height:50px;
     clear:both;
 }
@@ -171,9 +171,10 @@ h3 {
 }
 
 .nav {
+    margin:0 auto;
     padding-left:99px;
     padding-right:99px;
-    /*width:702px;*/
+    width:702px;
     height:60px;
     background:url('../images/toolbar.png') no-repeat center top;
 }
@@ -210,9 +211,8 @@ li{
 }
 
 .content {
-    background-color:#262626;
     width:730px;
-	margin-left: 100px;
+    margin-left: 100px;
     overflow:auto;
     padding:0 0 0 0;
 }
