@@ -99,8 +99,8 @@ div {
     margin-left:auto;
     margin-right:auto;
     padding-left:100px;
-    padding-right:75px;
-    width:725px;
+    padding-right:65px;
+    width:735px;
     min-height:50px;
     clear:both;
 }
@@ -224,6 +224,10 @@ h3 {
     width:340px;
     clear:none;
     float:left;
+}
+
+div[name~='left_column'] {
+    margin-right:20px;
 }
 
 .subsec_text {
