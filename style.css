@@ -2,14 +2,20 @@
 
 * {
     margin:0 0 0 0;
-	padding: 0;
+    padding: 0;
     color:#ffffff;
 }
 
 
-.content { font-family: "Nobile", "Lucida Grande", "Verdana", "Arial", "Helvetica", "Gill Sans", sans-serif; font-size: 90.89%;}
+.content {
+    font-family: "Nobile", "Lucida Grande", "Verdana", "Arial", "Helvetica", "Gill Sans", sans-serif;
+    font-size: 90.89%;
+}
 
-.afs-nobile { font-family: "Nobile", "Lucida Grande", "Verdana", "Arial", "Helvetica", "Gill Sans", sans-serif; font-size: 90.89%;}
+.afs-nobile {
+    font-family: "Nobile", "Lucida Grande", "Verdana", "Arial", "Helvetica", "Gill Sans", sans-serif;
+    font-size: 90.89%;
+}
 
 
 @font-face {
