@@ -10,12 +10,17 @@
 body {
 	background: #262626;
 	background-image: url("../images/pattern.png");
+	min-width: 900px;
 }
 
 img {
 	border: none;
+	opacity: .8;
 }
 
+img:hover{
+	opacity: 1;
+}
 .content {
     font-family: "Fontin Sans", "Nobile", "Lucida Grande", "Verdana", "Arial", "Helvetica", "Gill Sans", sans-serif;
     font-size: 90.89%;
