@@ -126,33 +126,33 @@ h3 {
     height:78px;
     /*width:100%;*/
     padding:0 0 0 0;
-    background:url('images/header_bg.png') repeat-x left top;
+    background:url('../images/header_bg.png') repeat-x left top;
 }
 
 .banner {
     padding:0 0 0 0;
     height:78px;
     /*width:900px;*/
-    background:url('images/header.png') no-repeat center top;
+    background:url('../images/header.png') no-repeat center top;
 }
 
 .lem_mit_bg {
     height:205px;
     /*width:100%;*/
     padding:0 0 0 0;
-    background:url('images/banner_bg.png') repeat-x left top;
+    background:url('../images/banner_bg.png') repeat-x left top;
 }
 
 .lem_mit_banner {
     height:205px;
-    background:url('images/banner.png') no-repeat center top;
+    background:url('../images/banner.png') no-repeat center top;
 }
 
 .splash_container {
     height:430px;
     /*width:100%;*/
     padding:0 0 0 0;
-    background:url('images/presentationBanner_bg.png') repeat-x left top;
+    background:url('../images/presentationBanner_bg.png') repeat-x left top;
 }
 
 .splash {
@@ -160,14 +160,14 @@ h3 {
     /*width:850px;*/
     padding-left:50px;
     padding-right:0;
-    background:url('images/presentationBanner.png') no-repeat center top;
+    background:url('../images/presentationBanner.png') no-repeat center top;
 }
 
 .nav_container {
     height:60px;
     /*width:100%;*/
     padding:0 0 0 0;
-    background:url('images/toolbar_bg.png') repeat-x left top;
+    background:url('../images/toolbar_bg.png') repeat-x left top;
 }
 
 .nav {
@@ -175,7 +175,7 @@ h3 {
     padding-right:99px;
     /*width:702px;*/
     height:60px;
-    background:url('images/toolbar.png') no-repeat center top;
+    background:url('../images/toolbar.png') no-repeat center top;
 }
 
 .button_container {
