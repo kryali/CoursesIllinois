@@ -1,0 +1,136 @@
+/* styles for the home page */
+
+body {
+    margin:0 0 0 0;
+    color:#ffffff;
+}
+
+div {
+    /* generally want any div to be centered */
+    margin-left:auto;
+    margin-right:auto;
+    padding-left:100px;
+    padding-right:75px;
+    width:725px;
+    min-height:50px;
+    clear:both;
+}
+
+h2{
+	font-family: 'Lobster', arial, serif;
+	font-size: 3em;
+	text-shadow:2px 4px 3px #111111;
+}
+
+.banner_container {
+    height:78px;
+    width:100%;
+    padding:0 0 0 0;
+    background:url('images/header_bg.png') repeat-x left top;
+}
+
+.banner {
+    padding:0 0 0 0;
+    height:78px;
+    width:900px;
+    background:url('images/header.png') no-repeat center top;
+}
+
+.lem_mit_bg {
+    height:205px;
+    width:100%;
+    padding:0 0 0 0;
+    background:url('images/banner_bg.png') repeat-x left top;
+}
+
+.lem_mit_banner {
+    height:205px;
+    background:url('images/banner.png') no-repeat center top;
+}
+
+.splash_container {
+    height:430px;
+    width:100%;
+    padding:0 0 0 0;
+    background:url('images/presentationBanner_bg.png') repeat-x left top;
+}
+
+.splash {
+    height:430px;
+    width:850px;
+    padding-left:50px;
+    padding-right:0;
+    background:url('images/presentationBanner.png') no-repeat center top;
+}
+
+.nav_container {
+    height:60px;
+    width:100%;
+    padding:0 0 0 0;
+    background:url('images/toolbar_bg.png') repeat-x left top;
+}
+
+.nav {
+    padding-left:99px;
+    padding-right:99px;
+    width:702px;
+    height:60px;
+    background:url('images/toolbar.png') no-repeat center top;
+}
+
+.button_container {
+    height:60px;
+    width:234px;
+    padding:0 0 0 0;
+    clear:none;
+    float:left;
+}
+
+.button {
+    margin:14px auto 0 auto;
+    display:block;
+    width:77px;
+    height:33px;
+}
+
+#what_link {
+    margin-left:10px;
+}
+
+#why_link {
+    margin-left:72px;
+}
+
+#who_link {
+    margin-right:20px;
+}
+
+.content {
+    background-color:#262626;
+    width:100%;
+    overflow:auto;
+    padding:0 0 0 0;
+}
+
+.section {
+    overflow:auto;
+}
+
+.section_desc {
+    margin:0 0 0 0;
+    padding:0 0 0 0;
+}
+
+.column {
+    margin:0 10px 0 0;
+    padding:0 10px 0 0;
+    width:340px;
+    clear:none;
+    float:left;
+}
+
+.subsec_text {
+    padding:0 0 0 0;
+    margin-bottom:10px;
+    width:inherit;
+}
