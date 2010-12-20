@@ -211,7 +211,8 @@ li{
 
 .content {
     background-color:#262626;
-    width:100%;
+    width:730px;
+	margin-left: 100px;
     overflow:auto;
     padding:0 0 0 0;
 }
