@@ -4,6 +4,7 @@
     margin:0 0 0 0;
 	padding: 0;
     color:#ffffff;
+	list-style: none;
 }
 
 
@@ -100,9 +101,14 @@ div {
 
 h2{
 	font-family: 'Lobster', arial, serif;
-	font-size: 3em;
+	font-size: 4em;
 	text-shadow:2px 4px 3px #111111;
 	margin: 35px 0 15px 0px;
+}
+
+h3 {
+	font-size: 1.3em;
+	margin:0 0 6px 0;
 }
 
 .banner_container {
@@ -200,8 +206,10 @@ h2{
 }
 
 .section_desc {
-    margin:0 0 0 0;
+	font-size: 1.3em;
+    margin:0 0 30px 0;
     padding:0 0 0 0;
+	color: #dddddd;
 }
 
 .column {
