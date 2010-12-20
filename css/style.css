@@ -12,6 +12,9 @@ body {
 	background-image: url("../images/pattern.png");
 }
 
+img {
+	border: none;
+}
 
 .content {
     font-family: "Fontin Sans", "Nobile", "Lucida Grande", "Verdana", "Arial", "Helvetica", "Gill Sans", sans-serif;
