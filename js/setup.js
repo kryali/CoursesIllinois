@@ -27,7 +27,7 @@ var setupToolBar = function(){
 			navigation.style.position = 'static';
 	    }
 	});
-	console.log($('#why'));
+	//console.log($('#why'));
 	$('#what_link').click(function(){
 		$.scrollTo($('#what')[0].offsetTop);
 	});
