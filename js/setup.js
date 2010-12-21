@@ -29,7 +29,6 @@ var setupToolBar = function(){
 	});
 
 	// Set up smooth scrolling instead of jump
-	console.log($('#what h2'));
 	$('#what_link').click(function(){
 		offset = $('#what')[0].offsetTop - $('#what h2')[0].clientHeight;
 		$.scrollTo(offset, scroll_settings);
