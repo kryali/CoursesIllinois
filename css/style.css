@@ -292,6 +292,10 @@ div[name~='left_column'] {
 div[name~='right_column'] {
     margin:30px 0 0 10px;
 }
+div[name~='right_column'] h3{
+    margin-top:255px;
+}
+
 
 .subsec_text {
     padding:0 0 0 0;
