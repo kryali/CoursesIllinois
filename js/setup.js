@@ -11,7 +11,7 @@ $(document).ready(function() {
 
 var setupToolTips = function(){
 	$('.tip').each(function(index) {
-		$(this).tipsy({fade: true, html:true});
+		$(this).tipsy({'fade': true, 'html':true, 'opacity':1.0});
 	});
 }
 
