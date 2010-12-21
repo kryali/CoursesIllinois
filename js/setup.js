@@ -6,6 +6,9 @@ $(document).ready(function() {
 });
 
 var setupToolTips = function(){
+	$('.tip').each(function(index) {
+		$(this).tipsy({fade: true});
+	});
 }
 
 var setupToolBar = function(){
@@ -13,10 +16,10 @@ var setupToolBar = function(){
 	$(window).scroll(function() {
 	    var navigation = $('#toolbar')[0];
 	    if (window.pageYOffset >= 713) {
-		navigation.style.position = 'fixed';
-		navigation.style.top = '0';
+			navigation.style.position = 'fixed';
+			navigation.style.top = '0';
 	    } else {
-		navigation.style.position = 'static';
+			navigation.style.position = 'static';
 	    }
 	});
 };

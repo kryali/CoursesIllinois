@@ -6,6 +6,12 @@
     color:#ffffff;
     list-style: none;
 }
+b{
+	text-decoration: underline;
+}
+a{
+	text-decoration: none;
+}
 
 body {
 	background: #262626;
@@ -295,7 +301,7 @@ div[name~='right_column'] {
     margin:30px 0 0 10px;
 }
 div[name~='right_column'] h3{
-    margin-top:255px;
+    margin-top: 150px;
 }
 
 
