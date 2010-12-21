@@ -13,12 +13,12 @@ body {
 	min-width: 900px;
 }
 
-img {
+.thumbnail {
 	border: none;
 	opacity: .8;
 }
 
-img:hover {
+.thumbnail:hover {
 	opacity: 1;
 }
 

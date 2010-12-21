@@ -7,12 +7,16 @@
 
     <script type="text/javascript" src="js/prototype.js"></script>
     <script type="text/javascript" src="js/scriptaculous.js?load=effects,builder"></script>
-    <script type="text/javascript" src="js/lightbox.js"></script>
     <script type="text/javascript" src="js/jquery-1.4.4.min.js"></script>
+    <!--script type="text/javascript" src="js/lightbox.js"></script-->
 
-    <link rel="stylesheet" href="css/lightbox.css" type="text/css" media="screen" />
+	<!--script type="text/javascript" src="js/thickbox-compressed.js"></script-->
+
+    <!--link rel="stylesheet" href="css/lightbox.css" type="text/css" media="screen" /-->
     <link rel="stylesheet" type="text/css" href="css/style.css" />
-
+	<!--link rel="stylesheet" href="css/thickbox.css" type="text/css" media="screen" /-->
+	<script type="text/javascript" src="js/slimbox2.js"></script>
+	<link rel="stylesheet" href="css/slimbox2.css" type="text/css" media="screen" />
     <script type="text/javascript">
 	    // Google analytics script
       var _gaq = _gaq || [];
@@ -29,15 +33,17 @@
 
     <script type="text/javascript">
 	// script to make toolbar follow user
-	$(window).scroll(function() {
-	    var navigation = $('#toolbar')[0];
-	    if (window.pageYOffset >= 713) {
-		navigation.style.position = 'fixed';
-		navigation.style.top = '0';
-	    } else {
-		navigation.style.position = 'static';
-	    }
-	});
+	if(jQuery){
+		$(window).scroll(function() {
+		    var navigation = $('#toolbar')[0];
+		    if (window.pageYOffset >= 713) {
+			navigation.style.position = 'fixed';
+			navigation.style.top = '0';
+		    } else {
+			navigation.style.position = 'static';
+		    }
+		});
+	}
     </script>
 
 </head>
@@ -85,23 +91,23 @@
 		    <div class="subsec_text">
 			<ul>
 				<li><p class="headline">Real-Time Feedback</p><p class="subtext">With real-time feedback charts such as average homework completion times and student satisfaction polls, instantaneous evaluation and adaptation has never been easier.</p> </li>
-				<li><p class="headline">Ridiculously easy user interface</p><p class="subtext">Forget those stupid training sessions, this is so easy to use my grandmother can use it. Clear charts and tabs make site navigation a breeze. You don't have to dig around for what you need.</p></li>
-				<li><p class="headline">Integrates right into existing workflow</p><p class="subtext">We know change sucks, so our plugins let you make announcements straight from Outlook or your inbox.</p></li>
+				<li><p class="headline">Ridiculously easy user interface</p><p class="subtext">No training required, this is so easy to use my grandmother can use it. Clear charts and tabs make site navigation a breeze. You don't have to dig around for what you need.</p></li>
+				<li><p class="headline">Integrates right into existing workflow</p><p class="subtext">We know change can be annoying, so our plugins let you make announcements straight from Outlook or your inbox.</p></li>
 				<li><p class="headline">Pre-built course websites</p><p class="subtext">Consistency and easy set up allows for more time spent planning the curriculum than building a website.</p> </li>
 			</ul>
 		    </div>
 		<a rel="lightbox" href="images/dashboardView.png">	
-		    <img src="images/image2.png" alt="Another sample screenshot" />
+		    <img src="images/image2.png" class="thumbnail" alt="Another sample screenshot" />
 		</a>
 		</div>
 		<div name="right_column" class="column">
-		    <a rel="lightbox" href="images/teacherstats.png">
-			<img src="images/image1.png" alt="A sample screenshot" />
+		    <a  rel="lightbox" href="images/teacherstats.png">
+			<img src="images/image1.png" class="thumbnail" alt="A sample screenshot" />
 		    </a>
 		    <h3>Students</h3>
 		    <div class="subsec_text">
 			<ul>
-				<li><p class="headline">Streamlined announcement system</p><p class="subtext">Centralizes a system for announcements with notifications so you're always up to date. A visually appealing homepage allows for students to stay connected and current with the progression of their courses.</p></li>
+				<li><p class="headline">Streamlined announcement system</p><p class="subtext">A system so smart it makes your to-do lists and schedule for you. Versatile enough to send announcements through email, SMS, or our mobile application.a</p></li>
 				<li><p class="headline">Integrated with mobile devices</p><p class="subtext">Find the information you need to know wherever you are and whenever you want it. Students can remain connected, even away from the computer. </p></li>
 				<li><p class="headline">Study groups</p><p class="subtext">Easily connect with your classmates to set up study sessions to collaborate with each other. Works with Facebook integration so we can find your friends-- in a non creepy sort of way.</p></li>
 				<li><p class="headline">Discussions</p><p class="subtext">A completely new approach to classroom discussions focused around question ranking and tagging so you can find the right questions when you need to. Students can "upvote" questions so instructors can address the most popular ones first. </p></li>
@@ -118,10 +124,10 @@
 		<a name="why">&nbsp;</a>
 		<h2>Why?</h2>
 		<div class="section_desc">
-		   The inspiration of our product came from the pain and frustrations many users experience with the existing management systems. Information about classes are fragmented, disorganized, and difficult to find. We asked students if they had the same problems. Check out what they wrote in 24 hours below.<br /><br /> <p>We want to build a brand new innovative system that solves these problems, and then some.</p>
+		   The inspiration of our product came from the pain and frustrations we face as students with existing management systems. Information about classes are fragmented, disorganized, and difficult to find. We asked other students if they had the same problems. Check out what they wrote in 24 hours below.<br /><br /> <p>We want to build a brand new innovative system that solves these problems, and then some.</p>
 		</div>
-		<a rel="lightbox" href="images/feedback1.png"><img src="images/feedback1_sm.png" alt="Real students' complaints." style="margin-right:20px;"/></a>
-		<a rel="lightbox" href="images/feedback2.png"><img src="images/feedback2_sm.png" alt="Current systems don't work."/></a>
+		<a rel="lightbox" href="images/feedback1.png"><img src="images/feedback1_sm.png" class="thumbnail" alt="Real students' complaints." style="margin-right:20px;"/></a>
+		<a rel="lightbox" href="images/feedback2.png"><img src="images/feedback2_sm.png" class="thumbnail" alt="Current systems don't work."/></a>
 	    </div>
 	
 	    <div id="who" class="section">
