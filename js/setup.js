@@ -7,7 +7,7 @@ $(document).ready(function() {
 
 var setupToolTips = function(){
 	$('.tip').each(function(index) {
-		$(this).tipsy({fade: true});
+		$(this).tipsy({fade: true, html:true});
 	});
 }
 
