@@ -1,9 +1,8 @@
 var toolbarPosition = 0;
-var scroll_settings = {'axis':'y','duration':'1000'};
+var scroll_settings = {'axis':'y','duration':'1000', 'easing':'swing'};
 
 $(document).ready(function() {
 	if(jQuery){
-		//$.scrollTo($('#why')[0].offsetTop); 
 		setupToolBar();
 		setupToolTips();
 	}
@@ -30,15 +29,19 @@ var setupToolBar = function(){
 	});
 
 	// Set up smooth scrolling instead of jump
+	console.log($('#what h2'));
 	$('#what_link').click(function(){
-		$.scrollTo($('#what')[0].offsetTop, scroll_settings);
+		offset = $('#what')[0].offsetTop - $('#what h2')[0].clientHeight;
+		$.scrollTo(offset, scroll_settings);
 	});
 	
 	$('#why_link').click(function(){
-		$.scrollTo($('#why')[0].offsetTop, scroll_settings);
+		offset = $('#why')[0].offsetTop - $('#why h2')[0].clientHeight;
+		$.scrollTo(offset, scroll_settings);
 	});
 	
 	$('#who_link').click(function(){
-		$.scrollTo($('#who')[0].offsetTop, scroll_settings);
+		offset = $('#who')[0].offsetTop - $('#who h2')[0].clientHeight;
+		$.scrollTo(offset, scroll_settings);
 	});
 };
