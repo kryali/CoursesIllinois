@@ -1,12 +1,15 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-	<title>CoursesIllinois - Lemelson-MIT Application</title>
+    <title>CoursesIllinois - Lemelson-MIT Application</title>
 
     <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css' />
+
     <script type="text/javascript" src="js/prototype.js"></script>
     <script type="text/javascript" src="js/scriptaculous.js?load=effects,builder"></script>
     <script type="text/javascript" src="js/lightbox.js"></script>
+    <script type="text/javascript" src="js/jquery-1.4.4.min.js"></script>
+
     <link rel="stylesheet" href="css/lightbox.css" type="text/css" media="screen" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
 
@@ -25,11 +28,14 @@
     </script>
 
     <script type="text/javascript">
-	// script to attach scroll event to window
+	// script to make toolbar follow user
 	$(window).scroll(function() {
-	    console.log('scroll handler called.');
+	    var navigation = $('#toolbar')[0];
 	    if (window.pageYOffset >= 713) {
-		alert('hey you past toolbar!');
+		navigation.style.position = 'fixed';
+		navigation.style.top = '0';
+	    } else {
+		navigation.style.position = 'static';
 	    }
 	});
     </script>
@@ -49,7 +55,8 @@
     <div class="splash"></div>
 </div>
 
-<div class="nav_container">
+<div class="nav_container"> <!-- this is a dummy container which takes up space when the toolbar is following the user -->
+<div id="toolbar" class="nav_container">
     <div class="nav">
 	<div class="button_container">
 	    <a id="what_link" href="#what" class="button"></a>
@@ -62,11 +69,14 @@
 	</div>
     </div>
 </div>
+</div>
 
 <div id="wrapper">
 	<div class="content">
 	    <div id="what" class="section">
-		<h2><a name="what">What?</a></h2>
+		<br />
+		<a name="what">&nbsp;</a>
+		<h2>What?</h2>
 		<div class="section_desc">
 		    CoursesIllinois lets teachers teach better and students work smarter. With a streamlined announcement system, real-time feedback, and an efficient way to share materials all centralized on one website, they can do just that. Your lives are stressful enough as it is. <br /><br /><p>CoursesIllinois is an alternative to Illinois Compass that doesn't suck.</p>
 		</div>
@@ -98,10 +108,15 @@
 			</ul>
 		    </div>
 		</div>
-	    </div><h2><a name="why">Mobile Prototype</a></h2>
-	<object width="480" height="385"><param name="movie" value="http://www.youtube.com/v/5PWTlUTprr8?fs=1&amp;hl=en_US"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/5PWTlUTprr8?fs=1&amp;hl=en_US" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="480" height="385"></embed></object>
+	    </div>
+
+	    <h2>Mobile Prototype</h2>
+	    <object width="480" height="385"><param name="movie" value="http://www.youtube.com/v/5PWTlUTprr8?fs=1&amp;hl=en_US"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><param name="wmode" value="opaque"></param><embed src="http://www.youtube.com/v/5PWTlUTprr8?fs=1&amp;hl=en_US" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="480" height="385" wmode="opaque"></embed></object>
+
 	    <div id="why" class="section">
-		<h2><a name="why">Why?</a></h2>
+		<br />
+		<a name="why">&nbsp;</a>
+		<h2>Why?</h2>
 		<div class="section_desc">
 		   The inspiration of our product came from the pain and frustrations many users experience with the existing management systems. Information about classes are fragmented, disorganized, and difficult to find. We asked students if they had the same problems. Check out what they wrote in 24 hours below.<br /><br /> <p>We want to build a brand new innovative system that solves these problems, and then some.</p>
 		</div>
@@ -110,7 +125,8 @@
 	    </div>
 	
 	    <div id="who" class="section">
-		<h2><a name="who">Who?</a></h2>
+		<a name="who">&nbsp;</a>
+		<h2>Who?</h2>
 		<div class="section_desc">
 		   CoursesIllinois is currently being built by talented students under the guidance of accomplished faculty members and emerging leaders in education software. 
 		<br /><br />Get involved. <a href="mailto:hello@coursesillinois.com">hello@CoursesIllinois.com</a>.
