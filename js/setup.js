@@ -2,9 +2,9 @@ var toolbarPosition = 0;
 
 $(document).ready(function() {
 	if(jQuery){
+		//$.scrollTo($('#why')[0].offsetTop); 
 		setupToolBar();
 		setupToolTips();
-		console.log(toolbarPosition);
 	}
 });
 
@@ -26,5 +26,17 @@ var setupToolBar = function(){
 	    } else {
 			navigation.style.position = 'static';
 	    }
+	});
+	console.log($('#why'));
+	$('#what_link').click(function(){
+		$.scrollTo($('#what')[0].offsetTop);
+	});
+	
+	$('#why_link').click(function(){
+		$.scrollTo($('#why')[0].offsetTop);
+	});
+	
+	$('#who_link').click(function(){
+		$.scrollTo($('#who')[0].offsetTop);
 	});
 };
