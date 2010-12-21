@@ -2,31 +2,37 @@
 <html>
 <head>
 	<title>CoursesIllinois - Lemelson-MIT Application</title>
-    <!--<script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/jquery.lightbox-0.5.js"></script>
 
-    <link rel="stylesheet" type="text/css" href="css/jquery.lightbox-0.5.css" media="screen" />-->
     <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css' />
     <script type="text/javascript" src="js/prototype.js"></script>
     <script type="text/javascript" src="js/scriptaculous.js?load=effects,builder"></script>
     <script type="text/javascript" src="js/lightbox.js"></script>
     <link rel="stylesheet" href="css/lightbox.css" type="text/css" media="screen" />
-	<script type='text/javascript' src='/javascripts/jquery.tipsy.js'></script>
-	<link rel="stylesheet" href="/stylesheets/tipsy.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
-	<script type="text/javascript">
-		// Google analytics script
-	  var _gaq = _gaq || [];
-	  _gaq.push(['_setAccount', 'UA-20351006-1']);
-	  _gaq.push(['_trackPageview']);
 
-	  (function() {
-	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-	  })();
+    <script type="text/javascript">
+	    // Google analytics script
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-20351006-1']);
+      _gaq.push(['_trackPageview']);
 
-	</script>
+      (function() {
+	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+
+    <script type="text/javascript">
+	// script to attach scroll event to window
+	$(window).scroll(function() {
+	    console.log('scroll handler called.');
+	    if (window.pageYOffset >= 713) {
+		alert('hey you past toolbar!');
+	    }
+	});
+    </script>
 
 </head>
 
@@ -99,8 +105,8 @@
 		<div class="section_desc">
 		   The inspiration of our product came from the pain and frustrations many users experience with the existing management systems. Information about classes are fragmented, disorganized, and difficult to find. We asked students if they had the same problems. Check out what they wrote in 24 hours below.<br /><br /> <p>We want to build a brand new innovative system that solves these problems, and then some.</p>
 		</div>
-		<a rel="lightbox" href="images/feedback1.png"><img src="images/feedback1_sm.png" alt="Insert image here!" style="height:220px; width:345px; margin-right:20px;"/></a>
-		<a rel="lightbox" href="images/feedback2.png"><img src="images/feedback2_sm.png" alt="Insert image here!" style="height:220px; width:345px;"/></a>
+		<a rel="lightbox" href="images/feedback1.png"><img src="images/feedback1_sm.png" alt="Real students' complaints." style="margin-right:20px;"/></a>
+		<a rel="lightbox" href="images/feedback2.png"><img src="images/feedback2_sm.png" alt="Current systems don't work."/></a>
 	    </div>
 	
 	    <div id="who" class="section">
